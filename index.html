@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Buttons outside the notepad container -->
+    <div class="buttons">
+      <button onclick="saveAsFile()">Save Note</button>
+      <input
+        type="file"
+        id="fileInput"
+        onchange="loadFromFile(event)"
+        style="display: none"
+      />
+      <button onclick="document.getElementById('fileInput').click();">
+        Load Note
+      </button>
+      <button onclick="clearNote()">Clear Note</button>
+    </div>
+
+    <!-- Container for the notepad content -->
+    <div class="container">
+      <h1>Notepad</h1>
+      <textarea id="notepad" placeholder="Write your notes here..."></textarea>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

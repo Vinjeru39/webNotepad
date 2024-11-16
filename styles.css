@@ -1,0 +1,73 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center everything horizontally */
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding-top: 50px; /* Add space at the top */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 850px; /* Same width as the notepad container */
+  max-width: 95%;
+  margin-bottom: 20px; /* Space between buttons and notepad */
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 850px; /* Increased width for the notepad */
+  max-width: 95%;
+  margin-bottom: 20px; /* Space between notepad and bottom of the screen */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  margin-top: 10px; /* Add space between buttons and textarea */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #fafafa;
+  background-image: linear-gradient(
+    to bottom,
+    #ddd 1px,
+    transparent 1px
+  ); /* Horizontal lines like a notebook */
+  background-size: 100% 24px; /* Set the spacing of the lines */
+}
